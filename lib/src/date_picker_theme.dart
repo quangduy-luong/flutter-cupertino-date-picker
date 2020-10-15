@@ -4,6 +4,9 @@ import 'package:flutter/foundation.dart';
 /// Default value of DatePicker's background color.
 const DATETIME_PICKER_BACKGROUND_COLOR = Colors.white;
 
+/// Default value of DatePicker's barrier color.
+const Color DATETIME_PICKER_BARRIER_COLOR = Colors.black54;
+
 /// Default value of whether show title widget or not.
 const DATETIME_PICKER_SHOW_TITLE_DEFAULT = true;
 
@@ -26,6 +29,7 @@ class DateTimePickerTheme with Diagnosticable {
   /// DateTimePicker theme.
   ///
   /// [backgroundColor] DatePicker's background color.
+  /// [barrierColor] DatePicker's barrier color.
   /// [cancelTextStyle] Default cancel widget's [TextStyle].
   /// [confirmTextStyle] Default confirm widget's [TextStyle].
   /// [cancel] Custom cancel widget.
@@ -38,6 +42,7 @@ class DateTimePickerTheme with Diagnosticable {
   /// [itemTextStyle] The value of DatePicker's column [TextStyle].
   const DateTimePickerTheme({
     this.backgroundColor: DATETIME_PICKER_BACKGROUND_COLOR,
+    this.barrierColor: DATETIME_PICKER_BARRIER_COLOR,
     this.cancelTextStyle,
     this.confirmTextStyle,
     this.cancel,
@@ -54,6 +59,9 @@ class DateTimePickerTheme with Diagnosticable {
 
   /// DatePicker's background color.
   final Color backgroundColor;
+
+  /// DatePicker's barrier color.
+  final Color barrierColor;
 
   /// Default cancel widget's [TextStyle].
   final TextStyle cancelTextStyle;
